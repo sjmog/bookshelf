@@ -1,0 +1,95 @@
+main {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.spine {
+  margin-left: 5px;
+  display: flex;
+  width: 10vw;
+  height: 30vh;
+  min-height: 300px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  padding-bottom: 40px;
+  text-decoration: none;
+}
+
+.spine__background {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: #fafacc;
+}
+
+.background__shape {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background: #aa66aa;
+}
+
+.background__shape:before {
+  content: "";
+  display: block;
+  background: #aa66aa;
+  height: 20px;
+  position: absolute;
+  top: -20px;
+  width: 100%;
+}
+
+.spine__details {
+  transform: rotate(-90deg);
+  text-align: center;
+  font-family: "Helvetica";
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+.spine__title {
+  color: #444;
+  font-size: 18px;
+}
+
+.spine__author {
+  color: #999;
+}
+
+.spine__logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spine__logo > img {
+
+}
